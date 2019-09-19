@@ -8,10 +8,10 @@ app.get("/", function(req, res){
   res.sendFile(path.join(__dirname+"/colorgame.html"));
 });
 
-app.listen(3000, function(){
-  console.log("Server running");
-});
-
-// app.listen(process.env.PORT, process.env.IP, function(){
-//    console.log("The Server Has Started!");
+// app.listen(3000, function(){
+//   console.log("Server running");
 // });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("The Server Has Started!");
+});
